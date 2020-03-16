@@ -6,7 +6,15 @@
 </head>
 <body>
     <div style="width:500px;margin:auto;">
-        result is {{ result }}
+        your result is {{ result }}
+    </div>
+<hr/>
+    <div  style="width:500px;margin:auto;">
+        <div> Please input a number to find what 1+2+3 all the way to your number will be:</div>
+          <form action="/calculate" method="post">
+              <input type="number" name="num" value="{{ num }}">
+              <input type="submit" value="submit">
+          </form>
     </div>
 </body>
 </html>
